@@ -31,12 +31,5 @@ env/
 .DS_Store
 Thumbs.db
 
-# Model files
-*.pkl
-*.joblib
-*.h5
-*.onnx
-
-
 # Ignore results (if auto-generated)
 results/
