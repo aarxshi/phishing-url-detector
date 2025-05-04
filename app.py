@@ -4,7 +4,10 @@ import pickle
 app = Flask(__name__)
 
 # Load the trained model
-with open("C:/Users/aarus/phishing-url-detection/live/model/model.pkl", "rb") as f:
+import os
+
+model_path = os.path.join(os.path.dirname(__file__), "model", "model.pkl")
+with open(model_path, "rb") as f:
     model = pickle.load(f)
 
 @app.route("/", methods=["GET", "POST"])
