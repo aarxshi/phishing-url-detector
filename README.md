@@ -4,6 +4,12 @@
 
 This project demonstrates a phishing detection system using a trained machine learning model served via a Flask web application. Users can input a URL and get real-time predictions of whether it's legitimate or phishing, along with confidence percentages.
 
+## Live Demo
+
+Access the live app here:  
+[Phishing URL Detector](https://phishing-url-detector-kn1b.onrender.com)  
+( **Note**: It may take upto a minute to load for the first time)
+
 ## Key Features
 
 - Trained scikit-learn pipeline with TF-IDF (word and character level) and LinearSVC
@@ -14,7 +20,8 @@ This project demonstrates a phishing detection system using a trained machine le
 
 ## Dataset and Model
 
-- Based on a public dataset of URLs labeled as legitimate or phishing
+- Based on the following dataset of URLs labeled as legitimate or phishing:
+   - `https://huggingface.co/datasets/pirocheto/phishing-url`
 - Pipeline includes:
   - TF-IDF feature extraction (word and character)
   - Linear Support Vector Machine with calibration for probabilities
